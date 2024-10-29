@@ -42,7 +42,7 @@
         // Generate random ID for the user
         $randomString = strtoupper(bin2hex(random_bytes(3)));
         $randomNum = rand(100, 999);
-        $userId = "USER" . $randomNum . $randomString;
+        $userId = "ADMIN" . $randomNum . $randomString;
 
         // File Upload Validation
         if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
@@ -84,7 +84,7 @@
         try {
             // User table insert
             $userQuery = "INSERT INTO users (userId,username,email,password,createdAt,userType)
-                                         values('$userId','$username','$email','$hashedPassword',NOW(),'User')";
+                                         values('$userId','$username','$email','$hashedPassword',NOW(),'Admin')";
             $userResult = mysqli_query($conn, $userQuery);
 
             if (!$userResult) {

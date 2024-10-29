@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Registration Form</title>
+    <link rel="stylesheet" href="./internalStyle/Register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="./php/regsiterAdmin.php " method="post" enctype="multipart/form-data">
+        <!-- Personal Information Section -->
+        <div class="form-section">
+          <h1>Personal Information</h1>
+
+          <label for="fname">Full Name</label>
+          <div class="group1">
+            <input type="text" placeholder="First Name" name="fname" required />
+            <input type="text" placeholder="Middle Name" name="mname" />
+            <input type="text" placeholder="Last Name" name="lname" required />
+          </div>
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" required />
+
+          <label for="image">Image</label>
+          <input type="file" name="image">
+
+          <label for="marital-status">Marital Status</label>
+          <select name="marital-status" id="marital-status">
+            <option value="">Select</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+          </select>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="form-section">
+          <h2>Contact Information</h2>
+
+          <div class="group2">
+            <input type="email" placeholder="E-mail" name="email" required />
+            <input
+              type="number"
+              placeholder="Mobile Number"
+              name="phone"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Address Section -->
+        <div class="form-section">
+          <h2>Address</h2>
+
+          <input
+            type="text"
+            placeholder="Street Address"
+            name="address"
+            required
+          />
+          <div class="group3">
+            <input type="text" placeholder="City" name="city" required />
+            <input
+              type="text"
+              placeholder="State / Province"
+              name="state"
+              required
+            />
+            <input type="text" placeholder="ZIP Code" name="zip" required />
+          </div>
+          <input type="text" placeholder="Country" name="country" required />
+        </div>
+
+        <div class="form-section">
+          <h2>Login Details</h2>
+
+          <input type="text" placeholder="Username" name="username" required />
+          <div class="group3">
+            <input
+              type="password"
+              placeholder="Enter Your password"
+              name="password"
+              id="password"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-button">
+          <button type="submit" name="sub">REGISTER ME</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
