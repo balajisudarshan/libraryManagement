@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="./php/register.php" method="post">
+      <form action="./php/register.php" method="post" enctype="multipart/form-data">
         <!-- Personal Information Section -->
         <div class="form-section">
           <h1>Personal Information</h1>
@@ -24,7 +24,7 @@
           <input type="date" name="dob" required />
 
           <label for="image">Image</label>
-          <input type="file" name="image" required />
+          <input type="file" name="image">
 
           <label for="marital-status">Marital Status</label>
           <select name="marital-status" id="marital-status">
