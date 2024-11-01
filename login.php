@@ -26,10 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['userType'] = $user['userType'];
 
             if ($user['userType'] == 'Admin') {
-                header("Location: ./components/adminDashboard.php");
+                header("Location: ./components/adminDashboard.php?username=" . $_SESSION['username']);
             } else {
                 header("Location: user_dashboard.php");
             }
+            
             exit();
         } else {
             // Set error message in session and redirect

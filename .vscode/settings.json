@@ -1,0 +1,21 @@
+{
+    "folder-customization.folders": [
+        {
+            "path": "libraryWebsite\\components\\internalStyle\\",
+            "color": "foldercustomization.AnsiColor214"
+        },
+        {
+            "path": "libraryWebsite\\components\\",
+            "badge": "💽",
+            "color": "foldercustomization.AnsiColor39"
+        },
+        {
+            "path": "libraryWebsite\\styles\\",
+            "badge": "🖌️"
+        },
+        {
+            "path": "libraryWebsite\\components\\php\\",
+            "color": "__blocked__"
+        }
+    ]
+}
